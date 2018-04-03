@@ -1,18 +1,16 @@
-package Controler;
-
 public class TripRequest {
 
     public TripRequest() {
     }
 
     /**
-     * Ef user er validated þá kallar fallið  Controler.Booking.Trip klasann?
+     * Ef user er validated þá kallar fallið  Booking.Trip klasann?
      * @return ef gengur
      */
     public boolean createTrip(){
         //get current userID
         //if(validateUser(currentUserID))
-            //kalla á trip og búa til nýja Controler.Booking.Trip
+            //kalla á trip og búa til nýja Booking.Trip
         // ef gengur
         return true;
     }

@@ -1,5 +1,3 @@
-package Controler;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -36,7 +34,7 @@ public class TripList {
 
     /**
      * + resetFilters(): void
-     * sækja allar ferðir úr DB og setja í arrayList<Controler.Booking.Trip>
+     * sækja allar ferðir úr DB og setja í arrayList<Booking.Trip>
      * Láta þessa aðferð kalla á getTrips();?
      */
     public  void resetFilters() {
@@ -45,7 +43,7 @@ public class TripList {
 
 
     /**
-     * + getTrips(): ArrayList<Controler.Booking.Trip>
+     * + getTrips(): ArrayList<Booking.Trip>
      *  Þurfum við sér aðferð? er ekki hægt að ná í þetta í gegnum DBmanager?
      * @return skilar lista yfir allar ferðir (út frá filter?)
      * Kíkja betur á List - Arraylist dæmið

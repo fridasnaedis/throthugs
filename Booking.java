@@ -1,11 +1,3 @@
-package Controler;
-
-import Model.Person;
-import Model.Reveiw;
-
-import java.util.ArrayList;
-import java.util.Date;
-
 public class Booking {
 
     /**

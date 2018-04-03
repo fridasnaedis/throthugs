@@ -1,5 +1,3 @@
-package Model;
-
 import sun.plugin.util.UserProfile;
 
 import java.util.Date;
