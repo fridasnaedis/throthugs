@@ -45,8 +45,8 @@ public class UserProfile {
 
     }
 
-    public Review listReviews() {
-        return new Review(date, rewiewID, user, reviewText, tripID, visability);
+    public Reveiw listReviews() {
+        return new Reveiw(date, rewiewID, user, reviewText, tripID, visability);
     }
 
 

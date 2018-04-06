@@ -2,14 +2,14 @@ import sun.plugin.util.UserProfile;
 
 import java.util.Date;
 
-public class Reveiw {
+public class Review {
 
     /**
      * Viðfangsbreytur
      * skoða UserProfile klasann
      */
     private Date date;
-    private Long rewiewID;
+    private Long reviewID;
     private UserProfile user;
     private String reviewText;
     private Long tripID;
@@ -19,15 +19,15 @@ public class Reveiw {
     /**
      * Smiður
      * @param date
-     * @param rewiewID
+     * @param reviewID
      * @param user
      * @param reviewText
      * @param tripID
      * @param visability
      */
-    public Reveiw(Date date, Long rewiewID, UserProfile user, String reviewText, Long tripID, Boolean visability) {
+    public Review(Date date, Long reviewID, UserProfile user, String reviewText, Long tripID, Boolean visability) {
         this.date = new Date();
-        this.rewiewID = rewiewID;
+        this.reviewID = reviewID;
         this.user = user;
         this.reviewText = reviewText;
         this.tripID = tripID;

@@ -17,7 +17,7 @@ public class Trip {
     private boolean familyFriendly;
     private boolean coupleFriendly;
     private boolean goupFriendly;
-    private ArrayList<Reveiw> reveiws;
+    private ArrayList<Review> reviews;
     private  String tripLocation;
     private int availableSeats;
 
@@ -27,7 +27,7 @@ public class Trip {
 
     public Trip(Long tripID, Date tripStartDate, Date tripEndDate, String tripDescription, double tripPrice,
                 int tripDifficulty, boolean wheelchairAccess, boolean familyFriendly, boolean coupleFriendly,
-                boolean goupFriendly, ArrayList<Reveiw> reveiws, String tripLocation, int availableSeats) {
+                boolean goupFriendly, ArrayList<Review> reviews, String tripLocation, int availableSeats) {
         this.tripID = null;
         this.tripStartDate = null;
         this.tripEndDate = null;
@@ -38,7 +38,7 @@ public class Trip {
         this.familyFriendly = familyFriendly;
         this.coupleFriendly = coupleFriendly;
         this.goupFriendly = goupFriendly;
-        this.reveiws = reveiws;
+        this.reviews = reviews;
         this.tripLocation = tripLocation;
         this.availableSeats = 0;
     }
