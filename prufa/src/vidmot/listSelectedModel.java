@@ -11,10 +11,10 @@ import javafx.stage.WindowEvent;
 
 import java.io.IOException;
 
-public class listSelectedModel implements ChangeListener {
+public class ListSelectedModel implements ChangeListener {
     private ListController listController;
     private FXMLLoader viewingTripLoader;
-    public listSelectedModel(ListController lc) {
+    public ListSelectedModel(ListController lc) {
         this.listController = lc;
     }
 
@@ -26,7 +26,7 @@ public class listSelectedModel implements ChangeListener {
         if(!listController.isViewingTrip()) {
             try {
                 FXMLLoader loader = new FXMLLoader();
-                root = loader.load(getClass().getResource("trip.fxml").openStream());
+                root = loader.load(getClass().getResource("Trip.fxml").openStream());
                 viewingTripLoader = loader;
                 Scene scene = new Scene(root, 820, 535);
                 stage.setScene(scene);
@@ -39,11 +39,11 @@ public class listSelectedModel implements ChangeListener {
                 });
 
             } catch(IOException ex) {
-                System.err.println("Error while loading trip.fxml "+ex.getMessage());
+                System.err.println("Error while loading Trip.fxml "+ex.getMessage());
             }
         }
         else {
-            tripController viewingTripWindow =  this.viewingTripLoader.getController();
+            TripController viewingTripWindow =  this.viewingTripLoader.getController();
             viewingTripWindow.makeTab();
 
         }

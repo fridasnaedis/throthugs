@@ -14,7 +14,7 @@ import java.net.URL;
 import java.util.ArrayList;
 import java.util.ResourceBundle;
 
-public class ListController implements Initializable {
+public class ListController implements Initializable, Controller {
     private static String location;
     private static boolean viewingTrip;
     @FXML
@@ -62,7 +62,7 @@ public class ListController implements Initializable {
         locationTXT.setText(location);
         setPriceList(maxPrice);
         setPriceList(minPrice);
-        list.getSelectionModel().selectedItemProperty().addListener(new listSelectedModel(this));
+        list.getSelectionModel().selectedItemProperty().addListener(new ListSelectedModel(this));
     }
 
     private void setPriceList(JFXComboBox comboBox) {
@@ -81,6 +81,11 @@ public class ListController implements Initializable {
     }
 
     public void logIn() {
+
+    }
+
+    @Override
+    public void setPrev(String prev) {
 
     }
 }

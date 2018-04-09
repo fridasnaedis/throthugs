@@ -1,16 +1,13 @@
 package vidmot;
 
 import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Parent;
-import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import com.jfoenix.controls.JFXTextField;
 import javafx.stage.Stage;
 
 import java.io.IOException;
 
-public class searchWindowController {
+public class SearchWindowController implements Controller {
     @FXML
     private Button forwardbutton;
 
@@ -19,22 +16,21 @@ public class searchWindowController {
 
     public void forwardButton() throws IOException {
         ListController.setLocation(locationTXT.getText());
-        Parent root;
-        Stage stage;
-        stage = (Stage) forwardbutton.getScene().getWindow();
-        root = FXMLLoader.load(getClass().getResource("List.fxml"));
-        Scene scene = new Scene(root, 820, 535);
-        stage.setScene(scene);
-        stage.show();
+        Stage stage = (Stage) forwardbutton.getScene().getWindow();
+        DayTripUI.changeStage(stage, getClass().getResource("List.fxml"),"SearchWindow.fxml");
     }
 
     public void logIn() throws IOException {
-        Parent root;
-        Stage stage;
-        stage = (Stage) forwardbutton.getScene().getWindow();
-        root = FXMLLoader.load(getClass().getResource("Login.fxml"));
-        Scene scene = new Scene(root, 820, 535);
-        stage.setScene(scene);
-        stage.show();
+        Stage stage = (Stage) forwardbutton.getScene().getWindow();
+        DayTripUI.changeStage(stage, getClass().getResource("LogIn.fxml"),"SearchWindow.fxml");
+    }
+    public void signUp() throws IOException {
+        Stage stage = (Stage) forwardbutton.getScene().getWindow();
+        DayTripUI.changeStage(stage, getClass().getResource("SignUp.fxml"),"SearchWindow.fxml");
+    }
+
+    @Override
+    public void setPrev(String prev) {
+
     }
 }
