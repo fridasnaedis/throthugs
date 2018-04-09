@@ -13,7 +13,7 @@ import javafx.scene.text.Font;
 import java.net.URL;
 import java.util.ResourceBundle;
 
-public class tripController implements Initializable {
+public class TripController implements Initializable {
     @FXML
     private JFXTabPane tabs;
     @Override

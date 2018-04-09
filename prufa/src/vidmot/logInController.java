@@ -1,5 +1,5 @@
 package vidmot;
 
-public class logInController {
+public class LogInController {
 
 }

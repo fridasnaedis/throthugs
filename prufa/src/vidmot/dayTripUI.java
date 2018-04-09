@@ -6,11 +6,11 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
-public class dayTripUI extends Application {
+public class DayTripUI extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception{
-        Parent root = FXMLLoader.load(getClass().getResource("searchWindow.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("SearchWindow.fxml"));
         primaryStage.setTitle("daytrip.exe");
         primaryStage.setScene(new Scene(root, 820, 535));
         primaryStage.show();
