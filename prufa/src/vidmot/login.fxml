@@ -18,6 +18,7 @@
             <items>
               <MenuItem mnemonicParsing="false" onAction="#back" text="Back" />
                   <MenuItem mnemonicParsing="false" onAction="#signUp" text="Sign Up" />
+                  <MenuItem fx:id="searchPage" mnemonicParsing="false" onAction="#signUp" text="Search" />
             </items>
           </Menu>
           <Menu mnemonicParsing="false" text="Help">
@@ -33,7 +34,7 @@
                <children>
                    <FlowPane alignment="CENTER" layoutX="10.0" layoutY="88.0" prefHeight="78.0" prefWidth="354.0">
                        <children>
-                         <FlowPane alignment="CENTER" prefHeight="78.0" prefWidth="352.0">
+                         <FlowPane alignment="BOTTOM_CENTER" prefHeight="78.0" prefWidth="352.0">
                              <children>
                                  <Label text="Username">
                                      <FlowPane.margin>
@@ -45,8 +46,11 @@
                                  </Label>
                                  <TextField prefHeight="31.0" prefWidth="192.0" />
                              </children>
+                     <FlowPane.margin>
+                        <Insets bottom="20.0" />
+                     </FlowPane.margin>
                          </FlowPane>
-                         <FlowPane alignment="CENTER" prefHeight="78.0" prefWidth="354.0">
+                         <FlowPane alignment="TOP_CENTER" prefHeight="47.0" prefWidth="354.0">
                              <children>
                                  <Label text="Password">
                                      <FlowPane.margin>

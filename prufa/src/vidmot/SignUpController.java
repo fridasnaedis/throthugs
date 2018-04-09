@@ -11,11 +11,15 @@ public class SignUpController implements Controller{
     private JFXButton confirmSignUp;
     public void back() throws IOException {
         Stage stage = (Stage) confirmSignUp.getScene().getWindow();
-        DayTripUI.changeStage(stage, getClass().getResource(fxmlPrev),"SearchWindow.fxml");
+        DayTripUI.changeStage(stage, getClass().getResource(fxmlPrev),"SignUp.fxml");
     }
     public void logIn() throws IOException{
         Stage stage = (Stage) confirmSignUp.getScene().getWindow();
-        DayTripUI.changeStage(stage, getClass().getResource("LogIn.fxml"),"SearchWindow.fxml");
+        DayTripUI.changeStage(stage, getClass().getResource("LogIn.fxml"),"SignUp.fxml");
+    }
+    public void searchPage() throws IOException{
+        Stage stage = (Stage) confirmSignUp.getScene().getWindow();
+        DayTripUI.changeStage(stage, getClass().getResource("SearchWindow.fxml"),"");
     }
     @Override
     public void setPrev(String prev) {

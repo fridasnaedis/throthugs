@@ -22,4 +22,8 @@ public class LogInController implements Controller {
         Stage stage = (Stage) this.logIn.getScene().getWindow();
         DayTripUI.changeStage(stage, getClass().getResource("SignUp.fxml"),"LogIn.fxml");
     }
+    public void searchPage() throws IOException{
+        Stage stage = (Stage) logIn.getScene().getWindow();
+        DayTripUI.changeStage(stage, getClass().getResource("SearchWindow.fxml"),"");
+    }
 }
