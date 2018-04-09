@@ -28,7 +28,13 @@ public class searchWindowController {
         stage.show();
     }
 
-    public void logIn() {
-        System.out.println("LogIn");
+    public void logIn() throws IOException {
+        Parent root;
+        Stage stage;
+        stage = (Stage) forwardbutton.getScene().getWindow();
+        root = FXMLLoader.load(getClass().getResource("Login.fxml"));
+        Scene scene = new Scene(root, 820, 535);
+        stage.setScene(scene);
+        stage.show();
     }
 }
