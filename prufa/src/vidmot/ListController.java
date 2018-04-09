@@ -8,6 +8,7 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.DatePicker;
 import javafx.scene.control.ListView;
 
 import java.net.URL;
@@ -62,6 +63,8 @@ public class ListController implements Initializable, Controller {
         locationTXT.setText(location);
         setPriceList(maxPrice);
         setPriceList(minPrice);
+        setNumbOfCustomers(numbOfCustomers);
+        setDifficulty(difficulty);
         list.getSelectionModel().selectedItemProperty().addListener(new ListSelectedModel(this));
     }
 
@@ -79,6 +82,29 @@ public class ListController implements Initializable, Controller {
         ObservableList<String> obs = FXCollections.observableArrayList(priceList);
         comboBox.setItems(obs);
     }
+
+    private void setNumbOfCustomers(JFXComboBox comboBox) {
+        int count = 0;
+        ArrayList<String> custList = new ArrayList();
+        for(int i = 0; i<50; i++) {
+            custList.add("" + count);
+            count += 1;
+        }
+        ObservableList<String> obs = FXCollections.observableArrayList(custList);
+        comboBox.setItems(obs);
+    }
+
+    private void setDifficulty(JFXComboBox comboBox) {
+        ArrayList<String> diffList = new ArrayList();
+        diffList.add("Mjög létt");
+        diffList.add("Létt");
+        diffList.add("Miðlungs");
+        diffList.add("Erfitt");
+        diffList.add("Mjög erfitt");
+        ObservableList<String> obs = FXCollections.observableArrayList(diffList);
+        comboBox.setItems(obs);
+    }
+
 
     public void logIn() {
 
