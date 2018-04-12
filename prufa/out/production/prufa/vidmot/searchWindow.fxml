@@ -57,8 +57,8 @@
             <menus>
                 <Menu mnemonicParsing="false" text="Options">
                     <items>
-                        <MenuItem mnemonicParsing="false" onAction="#logIn" text="Log In" />
-                        <MenuItem mnemonicParsing="false" onAction="#signUp" text="Sign Up" />
+                        <MenuItem mnemonicParsing="false" onAction="#bookingService" text="Booking Service" />
+                        <MenuItem mnemonicParsing="false" onAction="#createTrip" text="Create Trip" />
                     </items></Menu>
                 <Menu mnemonicParsing="false" text="Help">
                     <items>

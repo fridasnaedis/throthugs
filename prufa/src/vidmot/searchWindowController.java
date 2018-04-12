@@ -20,13 +20,13 @@ public class SearchWindowController implements Controller {
         DayTripUI.changeStage(stage, getClass().getResource("List.fxml"),"SearchWindow.fxml");
     }
 
-    public void logIn() throws IOException {
+    public void bookingService() throws IOException {
         Stage stage = (Stage) forwardbutton.getScene().getWindow();
-        DayTripUI.changeStage(stage, getClass().getResource("LogIn.fxml"),"SearchWindow.fxml");
+        DayTripUI.changeStage(stage, getClass().getResource("BookingService.fxml"),"SearchWindow.fxml");
     }
-    public void signUp() throws IOException {
+    public void createTrip() throws IOException {
         Stage stage = (Stage) forwardbutton.getScene().getWindow();
-        DayTripUI.changeStage(stage, getClass().getResource("SignUp.fxml"),"SearchWindow.fxml");
+        DayTripUI.changeStage(stage, getClass().getResource("CreateTrip.fxml"),"SearchWindow.fxml");
     }
 
     @Override

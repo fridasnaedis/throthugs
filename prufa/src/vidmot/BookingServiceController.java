@@ -6,7 +6,7 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
-public class LogInController implements Controller {
+public class BookingServiceController implements Controller {
     private String fxmlBack;
     @FXML
     private JFXButton logIn;
@@ -16,11 +16,11 @@ public class LogInController implements Controller {
     }
     public void back() throws IOException {
         Stage stage = (Stage) this.logIn.getScene().getWindow();
-        DayTripUI.changeStage(stage, getClass().getResource(fxmlBack),"LogIn.fxml");
+        DayTripUI.changeStage(stage, getClass().getResource(fxmlBack),"BookingService.fxml");
     }
-    public void signUp() throws IOException {
+    public void createTrip() throws IOException {
         Stage stage = (Stage) this.logIn.getScene().getWindow();
-        DayTripUI.changeStage(stage, getClass().getResource("SignUp.fxml"),"LogIn.fxml");
+        DayTripUI.changeStage(stage, getClass().getResource("CreateTrip.fxml"),"BookingService.fxml");
     }
     public void searchPage() throws IOException{
         Stage stage = (Stage) logIn.getScene().getWindow();

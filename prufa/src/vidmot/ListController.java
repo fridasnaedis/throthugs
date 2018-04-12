@@ -10,7 +10,9 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.DatePicker;
 import javafx.scene.control.ListView;
+import javafx.stage.Stage;
 
+import java.io.IOException;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.ResourceBundle;
@@ -106,8 +108,14 @@ public class ListController implements Initializable, Controller {
     }
 
 
-    public void logIn() {
+    public void bookingService() throws IOException {
+        Stage stage = (Stage) locationTXT.getScene().getWindow();
+        DayTripUI.changeStage(stage, getClass().getResource("BookingService.fxml"),"List.fxml");
+    }
 
+    public void createTrip() throws IOException {
+        Stage stage = (Stage) locationTXT.getScene().getWindow();
+        DayTripUI.changeStage(stage, getClass().getResource("CreateTrip.fxml"),"List.fxml");
     }
 
     @Override
