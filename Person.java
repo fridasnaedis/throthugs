@@ -1,12 +1,9 @@
 import org.hibernate.annotations.GenericGenerator;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 
 @Entity
-@Table(name = "person")
+@Table(name = "PERSON")
 public class Person
 {
 
@@ -18,6 +15,8 @@ public class Person
     private String firstName;
     private String lastName;
     private String userName;
+
+    //gera foreign key
     private int bookingReference;
     private String email;
 
@@ -67,11 +66,19 @@ public class Person
         this.lastName = lastName;
     }
 
-    public void setUserName(String userName) {
-        this.userName = userName;
-    }
-
     public void setEmail(String email) {
         this.email = email;
+    }
+
+    @Override
+    public String toString() {
+        return "Person{" +
+                "id=" + id +
+                ", firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", userName='" + userName + '\'' +
+                ", bookingReference=" + bookingReference +
+                ", email='" + email + '\'' +
+                '}';
     }
 }
