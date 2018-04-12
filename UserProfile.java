@@ -1,8 +1,8 @@
 public class UserProfile {
-
+/*
     /**
      * Getum við notað eitthvað sem er til í JAVA?
-     */
+     *
 
     private String userName;
     private boolean tourManager;
@@ -14,7 +14,7 @@ public class UserProfile {
      * @param userName
      * @param tourManager
      * @param tourBooker
-     */
+     *
     public UserProfile(String userName, boolean tourManager, boolean tourBooker) {
         this.userName = userName;
         this.tourManager = tourManager;
@@ -49,7 +49,7 @@ public class UserProfile {
         return new Reveiw(date, rewiewID, user, reviewText, tripID, visability);
     }
 
-
+*/
 
 
 }

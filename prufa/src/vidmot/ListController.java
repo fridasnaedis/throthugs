@@ -17,7 +17,7 @@ import java.net.URL;
 import java.util.ArrayList;
 import java.util.ResourceBundle;
 
-public class ListController implements Initializable, Controller {
+public class ListController implements Initializable, vidmot.Controller {
     private static String location;
     private static boolean viewingTrip;
     @FXML
