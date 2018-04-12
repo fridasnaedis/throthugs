@@ -1,4 +1,4 @@
-package prufa.src.vidmot;
+package view;
 
 
 import javafx.beans.value.ChangeListener;
@@ -12,9 +12,9 @@ import javafx.stage.WindowEvent;
 import java.io.IOException;
 
 public class ListSelectedModel implements ChangeListener {
-    private vidmot.ListController listController;
+    private view.ListController listController;
     private FXMLLoader viewingTripLoader;
-    public ListSelectedModel(vidmot.ListController lc) {
+    public ListSelectedModel(view.ListController lc) {
         this.listController = lc;
     }
 
@@ -43,7 +43,7 @@ public class ListSelectedModel implements ChangeListener {
             }
         }
         else {
-            vidmot.TripController viewingTripWindow =  this.viewingTripLoader.getController();
+            view.TripController viewingTripWindow =  this.viewingTripLoader.getController();
             viewingTripWindow.makeTab();
 
         }

@@ -1,4 +1,4 @@
-package prufa.src.vidmot;
+package view;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -28,7 +28,7 @@ public class DayTripUI extends Application {
         Parent root;
         FXMLLoader loader = new FXMLLoader(url);
         root = loader.load();
-        vidmot.Controller controller = loader.getController();
+        view.Controller controller = loader.getController();
         controller.setPrev(prev);
         Scene scene = new Scene(root, 820, 535);
         stage.setScene(scene);

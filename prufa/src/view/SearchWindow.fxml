@@ -13,7 +13,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="535.0" prefWidth="820.0" stylesheets="@mycss.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="vidmot.SearchWindowController">
+<BorderPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="535.0" prefWidth="820.0" stylesheets="@mycss.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.SearchWindowController">
     <center>
         <BorderPane prefHeight="503.0" prefWidth="471.0" BorderPane.alignment="CENTER">
             <top>
@@ -57,8 +57,8 @@
             <menus>
                 <Menu mnemonicParsing="false" text="Options">
                     <items>
-                        <MenuItem mnemonicParsing="false" onAction="#logIn" text="Log In" />
-                        <MenuItem mnemonicParsing="false" onAction="#signUp" text="Sign Up" />
+                        <MenuItem mnemonicParsing="false" onAction="#bookingService" text="Booking Service" />
+                        <MenuItem mnemonicParsing="false" onAction="#createTrip" text="Create Trip" />
                     </items></Menu>
                 <Menu mnemonicParsing="false" text="Help">
                     <items>

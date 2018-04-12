@@ -10,15 +10,15 @@
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.FlowPane?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="535.0" prefWidth="820.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="vidmot.LogInController">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="535.0" prefWidth="820.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="vidmot.BookingServiceController">
    <top>
       <MenuBar BorderPane.alignment="CENTER">
         <menus>
           <Menu mnemonicParsing="false" text="Options">
             <items>
               <MenuItem mnemonicParsing="false" onAction="#back" text="Back" />
-                  <MenuItem mnemonicParsing="false" onAction="#signUp" text="Sign Up" />
-                  <MenuItem fx:id="searchPage" mnemonicParsing="false" onAction="#signUp" text="Search" />
+                  <MenuItem mnemonicParsing="false" onAction="#createTrip" text="Create trip" />
+                  <MenuItem fx:id="searchPage" mnemonicParsing="false" onAction="#searchPage" text="Search" />
             </items>
           </Menu>
           <Menu mnemonicParsing="false" text="Help">
