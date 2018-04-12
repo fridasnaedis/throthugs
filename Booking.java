@@ -1,46 +1,71 @@
+import org.hibernate.annotations.GenericGenerator;
+
+import javax.persistence.*;
+
+@Entity
+@Table(name ="BOOKING")
 public class Booking {
 
-    /**
-     * tilviksbreytur eru public í UML??
-     */
-    private Long bookingNo;
-    private Person personInfo;
-    private Long tripId;
+
+    @Id
+    @GeneratedValue(generator = "increment")
+    @GenericGenerator(name = "increment", strategy = "increment")
+    private Long id;
+
+
+    //gera foreign key's
+   // private Person personID;
+    //private Long tripId;
     private int noGuest;
 
-    /**
-     * smiður
-     *
-     * @param bookingNo
-     * @param personInfo
-     * @param tripId
-     * @param noGuest
-     */
-    public Booking(Long bookingNo, Person personInfo, Long tripId, int noGuest) {
-        this.bookingNo = null;
-        this.personInfo = null;
-        this.tripId = null;
-        this.noGuest = 0;
+
+    public Booking(){};
+
+    public Booking(Person personID, Long tripId, int noGuest) {
+       // this.personID = personID;
+      //  this.tripId = tripId;
+        this.noGuest = noGuest;
     }
 
-    /**
-     * Þarf þessar aðferðir?
-     *
-     * @return skil ef gengur
-     */
-    public boolean cancelBooking() {
-        return true;
+    public Long getId() {
+        return id;
     }
 
-    public boolean submitBooking() {
-        return true;
+    public void setId(Long id) {
+        this.id = id;
+    }
+    /*
+    public Person getPersonID() {
+        return personID;
     }
 
-    /**
-     * getters...? erum með skrýtna aðferð sem heitir getBooking í UML skoða hana!
-     */
+    public void setPersonID(Person personID) {
+        this.personID = personID;
+    }
 
-    public Long getBookingNo() {
-        return bookingNo;
+    public Long getTripId() {
+        return tripId;
+    }
+
+    public void setTripId(Long tripId) {
+        this.tripId = tripId;
+    }
+   */
+    public int getNoGuest() {
+        return noGuest;
+    }
+
+    public void setNoGuest(int noGuest) {
+        this.noGuest = noGuest;
+    }
+
+    @Override
+    public String toString() {
+        return "Booking{" +
+                "id=" + id +
+                //", personID=" + personID +
+               // ", tripId=" + tripId +
+                ", noGuest=" + noGuest +
+                '}';
     }
 }
