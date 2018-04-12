@@ -1,4 +1,4 @@
-package vidmot;
+package view;
 
 
 import com.jfoenix.controls.JFXCheckBox;
@@ -8,7 +8,6 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
-import javafx.scene.control.DatePicker;
 import javafx.scene.control.ListView;
 import javafx.stage.Stage;
 
@@ -17,7 +16,7 @@ import java.net.URL;
 import java.util.ArrayList;
 import java.util.ResourceBundle;
 
-public class ListController implements Initializable, vidmot.Controller {
+public class ListController implements Initializable, view.Controller {
     private static String location;
     private static boolean viewingTrip;
     @FXML

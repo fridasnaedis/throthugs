@@ -1,13 +1,12 @@
-package vidmot;
+package view;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import com.jfoenix.controls.JFXTextField;
 import javafx.stage.Stage;
-
 import java.io.IOException;
 
-public class SearchWindowController implements vidmot.Controller {
+public class SearchWindowController implements view.Controller {
     @FXML
     private Button forwardbutton;
 
@@ -15,7 +14,7 @@ public class SearchWindowController implements vidmot.Controller {
     private JFXTextField locationTXT;
 
     public void forwardButton() throws IOException {
-        vidmot.ListController.setLocation(locationTXT.getText());
+        view.ListController.setLocation(locationTXT.getText());
         Stage stage = (Stage) forwardbutton.getScene().getWindow();
         DayTripUI.changeStage(stage, getClass().getResource("List.fxml"),"SearchWindow.fxml");
     }

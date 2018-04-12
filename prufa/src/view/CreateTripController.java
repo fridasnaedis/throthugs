@@ -1,4 +1,4 @@
-package vidmot;
+package view;
 
 import com.jfoenix.controls.JFXButton;
 import javafx.fxml.FXML;

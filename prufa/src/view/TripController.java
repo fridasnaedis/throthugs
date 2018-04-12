@@ -1,4 +1,4 @@
-package vidmot;
+package view;
 
 import com.jfoenix.controls.JFXTabPane;
 import javafx.fxml.FXML;
@@ -6,7 +6,6 @@ import javafx.fxml.Initializable;
 import javafx.geometry.Pos;
 import javafx.scene.control.Label;
 import javafx.scene.control.Tab;
-import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.text.Font;
 
