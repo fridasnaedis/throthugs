@@ -1,4 +1,4 @@
-package prufa.src.vidmot;
+package vidmot;
 
 
 import javafx.beans.value.ChangeListener;

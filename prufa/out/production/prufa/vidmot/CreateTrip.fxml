@@ -17,7 +17,7 @@
                 <Menu mnemonicParsing="false" text="Options">
                     <items>
                         <MenuItem mnemonicParsing="false" onAction="#back" text="Back" />
-                        <MenuItem mnemonicParsing="false" onAction="#logIn" text="Log In" />
+                        <MenuItem mnemonicParsing="false" onAction="#bookingService" text="Booking Service" />
                   <MenuItem mnemonicParsing="false" onAction="#searchPage" text="Search" />
                     </items>
                 </Menu>
