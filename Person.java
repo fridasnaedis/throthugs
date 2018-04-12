@@ -1,23 +1,47 @@
-public class Person {
+import org.hibernate.annotations.GenericGenerator;
 
-    /**
-     * viðfangsbreytur
-     */
-    private final String firstName;
-    private final String lastName;
-    private final String userName;
-    private final String email;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.Table;
 
-    /**
-     * Smiður
-     */
-    public Person() {};
-    public Person(String firstName, String lastName, String userName, String email) {
+@Entity
+@Table(name = "person")
+public class Person
+{
+
+    @Id
+    @GeneratedValue(generator = "increment")
+    @GenericGenerator(name = "increment", strategy = "increment")
+    private Long id;
+
+    private String firstName;
+    private String lastName;
+    private String userName;
+    private int bookingReference;
+    private String email;
+
+
+    public Person(){}
+
+    public Person(String firstName, String lastName, String userName, int bookingReference, String email) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.userName = userName;
+        this.bookingReference = bookingReference;
         this.email = email;
     }
+
+    public int getBookingReference() {
+        return bookingReference;
+    }
+
+    public void setBookingReference(int bookingReference) {
+        this.bookingReference = bookingReference;
+    }
+
+
+    //private List<Person> persons = new ArrayList<Person>();
 
     public String getFirstName() {
         return firstName;
@@ -35,17 +59,19 @@ public class Person {
         return email;
     }
 
-}
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
 
-    /** Dæmi um SQL töflu:
-     *
-     *     create table EMPLOYEE (
-     *         email VARCHAR(30) NOT NULL,
-     *         firstName VARCHAR(20) NOT NULL default NULL,
-     *         lastName  VARCHAR(20) NOT NULL default NULL,
-     *         userName  VARCHAR(20) default NULL,
-     *         PRIMARY KEY (email)
-     *         PRIMARY KEY (lasName)
-     *         );
-     *
-     */
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
+
+    public void setUserName(String userName) {
+        this.userName = userName;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+}

@@ -3,9 +3,11 @@ package vidmot;
 import com.jfoenix.controls.JFXButton;
 import javafx.fxml.FXML;
 import javafx.stage.Stage;
+import prufa.src.vidmot.DayTripUI;
+
 import java.io.IOException;
 
-public class SignUpController implements Controller{
+public class SignUpController implements vidmot.Controller {
     private String fxmlPrev;
     @FXML
     private JFXButton confirmSignUp;
